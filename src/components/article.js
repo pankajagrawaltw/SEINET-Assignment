@@ -29,8 +29,11 @@ function Article(props) {
                     Author - {props.author}
                 </Card.Text>
                 </Card.Body>
-                <Card.Footer className="text-right">
-                    <a href="#">
+                <Card.Footer>
+                    <Card.Text className="card-text float-left">
+                        {props.price ? props.price : "Free"}
+                    </Card.Text>
+                    <a href="#" className="float-right">
                         <i className="far fa-heart"></i>
                     </a>
                 </Card.Footer>

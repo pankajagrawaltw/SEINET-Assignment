@@ -78,6 +78,7 @@ function App() {
                             buyLink={article.amazon_product_url} 
                             author={article.author}
                             rank_last_week={article.rank_last_week}
+                            price={article.price}
                           />
                 })}
               </div>
