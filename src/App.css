@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+/* Main Css */
+
+.card-box .card {
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 15px 32px rgba(50, 50, 71, 0.08),
+    0px 16px 16px rgba(50, 50, 71, 0.08);
+  transition: all 0.5s ease;
+  margin-bottom: 15px;
+}
+.card-imghover {
+  transition: 0.5s ease;
+}
+.car-img {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  transition: 0.5s ease;
+}
+.car-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.car-img span {
+  position: absolute;
+  right: 4px;
+  top: 6px;
+  background: #ff3a3a;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 9px;
+  border-radius: 5px;
+}
+.card-imagebtn {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+.card-imagebtn .btn {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  text-transform: uppercase;
+  padding: 6px 17px 5px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.card-imghover:hover .card-imagebtn,
+.card-imghover:hover .overlay {
+  opacity: 1;
+  z-index: 1;
+}
+.card-imghover:hover .car-img span {
+  z-index: 0;
+}
+.card-imghover .overlay {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0006;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.card-box .card-body {
+  padding: 10px;
+}
+.card-title {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-text {
+  color: #615e5e;
+  font-size: 15px;
+  margin: 2px;
+  font-weight: 500;
+}
+.card-foot-left {
+  font-weight: 500;
+  padding-left: 4px;
+  color: #000;
+}
+.card-foot-right {
+  padding-right: 4px;
+}
+.card-foot-right a {
+  text-decoration: none;
+  color: #333;
+}
